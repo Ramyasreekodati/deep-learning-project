@@ -1,14 +1,14 @@
 import os
 import urllib.request as request
 from zipfile import ZipFile
-
-
-
+from cnnclassifier import logger
 import tensorflow as tf
 from pathlib import Path
+from cnnclassifier.entity.config_entity import PrepareBaseModelConfig
+
 
 class PrepareBaseModel:
-    def __init__(self, config):
+    def __init__(self, config : PrepareBaseModelConfig):
         self.config = config
         self.model = None  # Ensure model is initialized
 
