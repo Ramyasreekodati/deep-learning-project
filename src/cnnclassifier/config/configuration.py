@@ -1,8 +1,9 @@
-from src.cnnclassifier.constants import *
-from src.cnnclassifier.utils.common import read_yaml,create_directories
+from cnnclassifier.constants import CONFIG_FILE_PATH, PARAMS_FILE_PATH
+from cnnclassifier.utils.common import read_yaml,create_directories
 from cnnclassifier.entity.config_entity import (DataIngestionConfig,PrepareBaseModelConfig,PrepareCallbacksConfig, TrainingConfig,EvaluationConfig)
 import os
 from pathlib import Path
+from cnnclassifier.logging import logger
 
 class ConfigurationManager:
     def __init__(
