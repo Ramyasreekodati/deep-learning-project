@@ -1,5 +1,5 @@
 gunicorn
-tensorflow == 2.4.1
+tensorflow==2.15.0  # or the latest available version
 pandas
 dvc
 notebook
